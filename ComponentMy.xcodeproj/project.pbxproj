@@ -16,6 +16,8 @@
 		727035BF20804D56009678F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 727035BE20804D56009678F1 /* main.m */; };
 		727035C920804D56009678F1 /* ComponentMyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 727035C820804D56009678F1 /* ComponentMyTests.m */; };
 		727035D420804D56009678F1 /* ComponentMyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 727035D320804D56009678F1 /* ComponentMyUITests.m */; };
+		727A246D2084A273000EC3D6 /* Target_ComponentMy.m in Sources */ = {isa = PBXBuildFile; fileRef = 727A246C2084A273000EC3D6 /* Target_ComponentMy.m */; };
+		727A24702084A2A9000EC3D6 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 727A246F2084A2A9000EC3D6 /* MyViewController.m */; };
 		C82BEB3616866209618D9948 /* libPods-ComponentMy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3FFCDAA51D830682BD1F8E2 /* libPods-ComponentMy.a */; };
 		D7F04292C5E28E0571C1DE9E /* libPods-ComponentMyUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78EB213AF96CEEA1D9862F9A /* libPods-ComponentMyUITests.a */; };
 /* End PBXBuildFile section */
@@ -57,6 +59,10 @@
 		727035CF20804D56009678F1 /* ComponentMyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComponentMyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		727035D320804D56009678F1 /* ComponentMyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComponentMyUITests.m; sourceTree = "<group>"; };
 		727035D520804D56009678F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		727A246B2084A273000EC3D6 /* Target_ComponentMy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_ComponentMy.h; sourceTree = "<group>"; };
+		727A246C2084A273000EC3D6 /* Target_ComponentMy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_ComponentMy.m; sourceTree = "<group>"; };
+		727A246E2084A2A9000EC3D6 /* MyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		727A246F2084A2A9000EC3D6 /* MyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
 		78EB213AF96CEEA1D9862F9A /* libPods-ComponentMyUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ComponentMyUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95A0EC402D4B4D6138A8BD43 /* Pods-ComponentMyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComponentMyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ComponentMyTests/Pods-ComponentMyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		95D530BF2508B707B1FDFDBC /* Pods-ComponentMyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComponentMyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ComponentMyUITests/Pods-ComponentMyUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +124,7 @@
 		727035AE20804D55009678F1 /* ComponentMy */ = {
 			isa = PBXGroup;
 			children = (
+				727A24692084A249000EC3D6 /* ComponentMy */,
 				727035AF20804D55009678F1 /* AppDelegate.h */,
 				727035B020804D55009678F1 /* AppDelegate.m */,
 				727035B220804D55009678F1 /* ViewController.h */,
@@ -147,6 +154,25 @@
 				727035D520804D56009678F1 /* Info.plist */,
 			);
 			path = ComponentMyUITests;
+			sourceTree = "<group>";
+		};
+		727A24692084A249000EC3D6 /* ComponentMy */ = {
+			isa = PBXGroup;
+			children = (
+				727A246A2084A273000EC3D6 /* Targets */,
+				727A246E2084A2A9000EC3D6 /* MyViewController.h */,
+				727A246F2084A2A9000EC3D6 /* MyViewController.m */,
+			);
+			path = ComponentMy;
+			sourceTree = "<group>";
+		};
+		727A246A2084A273000EC3D6 /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				727A246B2084A273000EC3D6 /* Target_ComponentMy.h */,
+				727A246C2084A273000EC3D6 /* Target_ComponentMy.m */,
+			);
+			path = Targets;
 			sourceTree = "<group>";
 		};
 		A578165F70D9536ABF63EEBD /* Pods */ = {
@@ -362,9 +388,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				727A246D2084A273000EC3D6 /* Target_ComponentMy.m in Sources */,
 				727035B420804D55009678F1 /* ViewController.m in Sources */,
 				727035BF20804D56009678F1 /* main.m in Sources */,
 				727035B120804D55009678F1 /* AppDelegate.m in Sources */,
+				727A24702084A2A9000EC3D6 /* MyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,7 +565,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q4DSTTV3BM;
 				INFOPLIST_FILE = ComponentMy/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = shuiping.ComponentMy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -552,7 +583,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q4DSTTV3BM;
 				INFOPLIST_FILE = ComponentMy/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = shuiping.ComponentMy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -567,7 +601,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q4DSTTV3BM;
 				INFOPLIST_FILE = ComponentMyTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = shuiping.ComponentMyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -583,7 +621,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q4DSTTV3BM;
 				INFOPLIST_FILE = ComponentMyTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = shuiping.ComponentMyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -598,7 +640,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q4DSTTV3BM;
 				INFOPLIST_FILE = ComponentMyUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = shuiping.ComponentMyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -613,7 +659,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q4DSTTV3BM;
 				INFOPLIST_FILE = ComponentMyUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = shuiping.ComponentMyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
